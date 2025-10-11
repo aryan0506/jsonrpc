@@ -11,10 +11,23 @@ def add(a,b):  #method 1.
 def subtract(a,b):  # method 2.
     return a-b
 
+def multiply(a, b):  # method 3.
+    return a*b
+
+def divide(a, b):  # method 4.
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a/b
+def greet(name):  # method 5.
+    return f"Hello, {name}! "
+
 #here we are making list of methods
 methods = {
     "add":add,
-    "subtract":subtract
+    "subtract":subtract,
+    "multiply": multiply,
+    "divide" : divide,
+    "greet" : greet
 }
 
 # defining post method 
